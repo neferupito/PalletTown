@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<f:view>
+    <h:head>
+
+        <title>My Awesome Team :: #{pageTitle}</title>
+
+        <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+
+        <meta name="title" content="Pallet Town #{pageTitle}"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!--<link rel="shortcut icon" href="/img/favicon/favicon.png" type="image/png"/>-->
+        <!--<link rel="icon" href="/img/favicon/favicon.png" type="image/png"/>-->
+
+        <link rel="stylesheet" href="/resources/css/style.css" type="text/css"/>
+
+    </h:head>
+    <h:body>
+        <p:growl id="growlMessages" widgetVar="growl" globalOnly="true"/>
+
+        <h1><a href="/api/isAlive">Is Alive?</a></h1>
+
+        <h1><a href="/home">Home</a></h1>
+
+        <!--<h1><a href="/registration">Create a user</a></h1>-->
+        <hr/>
+
+        <ui:insert name="content"/>
+
+    </h:body>
+</f:view>
+</html>
